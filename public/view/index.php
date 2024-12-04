@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário de Cadastro de Assinatura</title>
-    <link rel="icon" href="img/logo.png" type="image/png">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="../assets/logo.png" type="image/png">
+    <link rel="stylesheet" href="../styles/styles.css">
 </head>
 
 <body>
@@ -14,21 +14,19 @@
 
     <header>
         <div class="logo">
-            <img src="img/logo.png" alt="Logo da Empresa" />
+            <img src="../assets/logo.png" alt="Logo da Empresa" />
         </div>
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#minha-assinatura">Minha Assinatura</a></li>
-                <li><a href="#fale-conosco">Fale Conosco</a></li>
-                <li><a href="#trabalhe-conosco">Trabalhe Conosco</a></li>
-            </ul>
+                <li><a href="/DUNDER-MIFFLIN/public/view/">Home</a></li>
+                <li><a href="/DUNDER-MIFFLIN/public/view/cancelar_assinatura.php">Cancelar assinatura</a></li>
+           
         </nav>
     </header>
 
     <div class="container">
         <h2>Cadastro de Assinatura</h2>
-        <form>
+        <form action="../../src/cadastro_cliente.php" method="post">
 
             <label for="nome">Nome:</label>
             <input type="text" id="nome" name="nome" required>
@@ -69,9 +67,9 @@
             <label for="forma_pagamento">Escolha a forma de pagamento:</label>
             <select id="forma_pagamento" name="forma_pagamento" required>
                 <option value="" disabled selected>Selecione uma opção</option>
-                <option value="cartao_credito">Cartão de Crédito</option>
-                <option value="boleto">Boleto Bancário</option>
-                <option value="pix">PIX</option>
+                <option value="1">Cartão de Crédito</option>
+                <option value="2">Boleto Bancário</option>
+                <option value="3">PIX</option>
             </select>
 
 
